@@ -5,7 +5,7 @@ import mongoose from "mongoose";
 const app = express();
 const port = 4000;
 
-mongoose.connect('mongodb+srv://admin-xiaoyu:che717191@cluster0.kxkjui2.mongodb.net/blogDB');
+mongoose.connect('mongodb://127.0.0.1:27017/blogDB');
 const postSchema = new mongoose.Schema({
   id: Number,
   title: String,
